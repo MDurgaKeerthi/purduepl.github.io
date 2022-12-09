@@ -12,7 +12,7 @@ jobs:
         uses: celinekurpershoek/link-checker@v1.0.2
         with:
           # Required:
-          url: "https://..."
+          url: "https://github.com/PurduePL/purduepl.github.io"
           # optional:
           ignorePatterns: "github,google"
       - name: Get the result
