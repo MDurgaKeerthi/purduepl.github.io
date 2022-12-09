@@ -1,0 +1,15 @@
+name: HTML checker
+on: [push, pull_request]
+
+jobs:
+  html_checker_job:
+    runs-on: ubuntu-latest
+    name: Check the html files
+    steps:
+      - name: Check HTML
+        uses: chabad360/htmlproofer@master
+        with:
+          directory: "."
+          # The directory to scan
+          # arguments: --allow-missing-href
+          # The arguments to pass to HTMLProofer
